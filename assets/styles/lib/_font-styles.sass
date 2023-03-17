@@ -1,0 +1,65 @@
+h1, h2, h3, h4, h5
+    @apply font-neto font-bold
+
+.small, .small_b, .body1, .body2, .body3, .btn, p
+    @apply font-source
+
+h1
+    @apply text-[44px] leading-[48px]
+    @apply max-w-[21ch] text-center
+
+h2
+    @apply text-[36px] leading-[40px]
+    @apply max-w-[60ch] text-center
+    @media (max-width: $breakpoint)
+        @apply text-[32px] leading-[38px]
+
+h3
+    @apply text-[28px] leading-[32px]
+
+h4
+    @apply text-[20px] leading-[24px]
+    @apply max-w-[50ch]
+
+h5
+    @apply text-[16px] leading-[20px]
+    @apply max-w-[28ch]
+
+.small_b
+    @apply font-bold
+    @apply text-[16px] leading-[18px]
+    @apply max-w-[28ch]
+
+.small
+    @apply text-[16px] leading-[18px]
+    @apply max-w-[28ch] 
+
+.body1
+    @apply font-bold text-dark_gray
+    // @apply text-[14px] leading-[21px] 
+    @apply max-w-[80ch]
+
+.body2, p
+    @apply text-dark_gray
+    // @apply text-[14px] leading-[21px]
+    @apply max-w-[70ch]
+
+.body3
+    @apply text-dark_gray
+    @apply text-[16px] leading-[21px]
+    @apply max-w-[80ch] 
+    
+
+.btn_text
+    @apply font-source font-semibold uppercase
+    @apply text-[16px] leading-[20px]
+    @apply max-w-[25ch]
+
+.link
+    @apply font-neto
+    @apply text-[16px] leading-[20px]
+    @apply max-w-[25ch]
+
+
+/*
+    @apply font-source

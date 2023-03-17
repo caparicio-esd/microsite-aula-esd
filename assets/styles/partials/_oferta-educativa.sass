@@ -1,0 +1,42 @@
+.oferta_educativa
+    @apply pt-32
+    h2
+        @apply text-center pb-6
+    h3 
+        @apply text-center pb-20
+    .cards_educational
+        @apply grid grid-cols-2 gap-x-8 gap-y-6 pb-32
+        @media (max-width: $breakpoint)
+            @apply grid-cols-1
+        .card_educational
+            @apply border-solid rounded shadow-md bg-white
+            @apply transition ease-in-out 
+            @apply duration-300
+            &:hover
+                @apply shadow-xl
+                @apply bg-light_gray
+            img
+                width: 100%
+            .text_card
+                @apply px-5 pt-5 pb-7 flex flex-col gap-4
+                @apply transition ease-in-out 
+                @apply duration-300
+                hr
+                    @apply h-1 w-full bg-black
+
+// pop-up
+
+.overlay
+    @apply fixed top-0 left-0 right-0 bottom-0
+    @apply bg-black z-10 hidden bg-opacity-30
+    @apply w-full h-full flex items-center justify-center
+    @media (max-width: $breakpoint)
+        @apply px-[9%]
+
+.popup
+    @apply flex flex-col gap-7 justify-start
+    @apply absolute inset-auto
+    @apply bg-white p-10 rounded shadow
+    @media (max-width: $breakpoint)
+        @apply w-[82%]
+        

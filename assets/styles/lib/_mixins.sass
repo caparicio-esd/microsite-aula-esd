@@ -1,0 +1,23 @@
+@mixin fs_base() 
+    font-size: 1rem
+    line-height: 1.5rem
+
+
+@mixin btn()
+    @apply py-[14px] px-[32px]
+    @extend .btn_text
+    @apply rounded-sm
+    @apply flex justify-center
+    @apply ease-in-out duration-100
+
+    &_primary
+        @apply bg-primary text-black
+        &:hover
+            @apply text-dark_gray
+            @apply bottom-5 drop-shadow-btn
+
+    &_secondary
+        @apply bg-white text-black 
+        @apply border-solid border-2 border-black
+        &:hover
+            @apply text-dark_gray border-dark_gray drop-shadow-btn 

@@ -1,0 +1,51 @@
+.faq
+    @apply mt-big
+    .faq_header
+        @apply flex flex-col gap-[32px] text-center 
+        .faq_header_title
+            @apply w-full mx-auto
+        .form
+            .searchbar
+                @apply pl-[52px] pr-[16px] py-[8px] rounded-sm
+                @apply bg-light_gray text-lg
+
+            .icon_search
+                @apply absolute ml-[27%] -mt-8 inset-x-2
+
+    .faq_accordion
+        @apply mt-small
+
+        .accordion_item
+            @apply mx-auto max-w-[920px] py-8
+            @apply border-b border-solid border-black
+
+            .accordion_header
+                @apply flex justify-between items-baseline gap-2 
+                // .accordion_title
+                .accordion_icon
+                    @apply w-[16px] 
+
+            .accordion_content
+                @apply justify-start
+                @apply py-[4px] pl-[24px]
+                @apply text-mid_gray
+
+.opened
+  @apply block
+
+  .accordion_header
+    @apply block
+    .accordion_icon
+        @apply rotate-[-180deg] ease-in-out duration-[450ms]
+  .accordion_content
+    @apply block
+
+.closed
+  @apply block
+
+  .accordion_header
+    @apply block
+    .accordion_icon
+        @apply ease-in-out duration-[450ms]
+  .accordion_content
+    @apply hidden

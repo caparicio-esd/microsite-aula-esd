@@ -1,0 +1,48 @@
+.header
+    @apply w-full flex justify-between px-[32px] shadow-md fixed bg-white z-10
+    @media screen and (max-width: $breakpoint)
+        @apply px-[32px] py-[24px] flex justify-between items-center
+    .header_logo
+        @apply flex flex-row gap-[8px] justify-center items-center
+        .logo_item
+            @apply w-[32px] object-center
+            // img
+        .logo_text
+            @apply w-auto p-[8px]
+
+            h3
+                @apply text-[24px]
+
+    .header_menu
+        .menu_items
+            @apply flex   
+            @media screen and (max-width: $breakpoint)
+                display: none
+
+            .menu_item
+                @apply px-[32px] py-[24px]
+                @apply hover:bg-black
+                @apply hover:text-white
+                @apply hover:duration-300
+                @media (max-width: 953px)
+                    @apply px-[20px]
+
+
+.mobile_menu
+    @apply hidden
+    @media screen and (max-width: $breakpoint)
+        @apply flex flex-col justify-center items-center gap-5  
+    
+    // .icon_menu
+    //     .menu_bars
+    //         svg
+    //     .menu_text
+        //   invisible         
+            // .menu_items
+            //     .menu_item
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+.banner
+    @apply pb-20 pt-[72px] relative
+    @media screen and (max-width: $breakpoint)
+        @apply static pb-[3rem]
+    div
+        .banner_pic
+            img
+                @apply w-full h-auto object-cover
+
+        .banner_info
+            @apply bg-white flex flex-col justify-center items-center
+            @apply absolute top-[60%] inset-x-0
+            @apply px-8 py-10 w-11/12 max-w-1080 mx-auto gap-6
+            @media screen and (max-width: $breakpoint)
+                @apply static w-[auto]
+                
+
