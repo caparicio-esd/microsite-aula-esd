@@ -1,1 +1,52 @@
 .footer
+    @apply bg-black text-white text-[.9rem]
+    @apply flex justify-between
+    @apply px-[24px] py-[40px] mt-[48px]
+    @media screen and (max-width: 880px)
+        @apply grid grid-cols-4 gap-4
+        @apply w-[100%]
+    @media screen and (max-width: 600px)
+        @apply grid grid-cols-1 gap-12
+        @apply w-[100%]
+
+    .block
+        @apply max-w-[160px] basis-[100%]
+        @apply font-neto
+        @media screen and (max-width: $breakpoint)
+            @apply min-w-[90%] mx-auto
+        &:last-child
+            @apply max-w-none basis-auto ml-auto
+            @media screen and (max-width: 600px)
+                @apply flex justify-end mb-[64px]
+
+        .capital
+            @apply min-h-[60px] mb-[11px]
+            @apply font-bold uppercase
+            @media screen and (max-width: 600px)
+                @apply min-h-0
+        .text_info_footer
+            @apply whitespace-nowrap
+        .block-link
+            @apply flex py-1 justify-start items-center
+            &:hover 
+                @apply text-primary
+            span
+                @apply ml-[8px]
+
+        div
+            @apply leading-[24px]
+
+
+        .logoCam
+            @apply flex items-start w-[210px]
+
+.siguenos_small
+    @media (max-width: 600px)
+        @apply grid grid-cols-2 gap-4 max-w-none mx-0 my-auto
+        .capital
+            @apply col-span-2
+        .block-link
+            @apply p-[16px]
+            @apply border border-primary
+            span
+                @apply py-[16px]

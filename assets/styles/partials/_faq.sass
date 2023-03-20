@@ -1,5 +1,5 @@
 .faq
-    @apply mt-big
+    @apply mt-big pt-[6rem]
     .faq_header
         @apply flex flex-col gap-[32px] text-center 
         .faq_header_title
@@ -16,18 +16,21 @@
         @apply mt-small
 
         .accordion_item
-            @apply mx-auto max-w-[920px] py-8
+            @apply mx-auto max-w-[920px] 
             @apply border-b border-solid border-black
+            &:hover
+                @apply cursor-pointer
 
             .accordion_header
                 @apply flex justify-between items-baseline gap-2 
-                // .accordion_title
+                .accordion_title
+                    @apply pt-6 pb-8
                 .accordion_icon
                     @apply w-[16px] 
 
             .accordion_content
                 @apply justify-start
-                @apply py-[4px] pl-[24px]
+                @apply pb-8 pl-[24px]
                 @apply text-mid_gray
 
 .opened

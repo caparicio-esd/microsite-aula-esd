@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Microsite</title>
   </head>
+
   <body>
     <!-- header -->
     <header class="header">
@@ -84,8 +85,8 @@
     <!--  /volver arriba -->
 
     <!-- banner -->
-    <section class="banner">
-      <div>
+    <section class="banner_holder">
+      <div class="banner">
         <div class="banner_pic">
           <img
             src="/assets/images/cards/banner_yellow.svg"
@@ -138,7 +139,7 @@
         <div class="card card_2">
           <div class="img card_image">
             <img
-              src="./assets/images/cards/Chatting_2.svg"
+              src="./assets/images/memojis.gif"
               alt="Chatting illustration"
             />
           </div>
@@ -154,6 +155,9 @@
               objetivo de preparar a los estudiantes a los retos del mundo del
               diseño.
             </p>
+            <a href="https://esdmadrid.es/trabajos-fin-estudios" class="btn btn_primary"
+              >trabajos
+            </a>
           </div>
         </div>
 
@@ -173,8 +177,8 @@
               docentes, y obtener más información sobre la vida en nuestra
               escuela.
             </p>
-            <a href="https://esdmadrid.es/" class="btn btn_primary"
-              >¡Visítanos!</a
+            <a href="https://esdmadrid.es/sobre-la-escuela" class="btn btn_primary"
+              >¡Conócenos!</a
             >
           </div>
         </div>
@@ -190,10 +194,10 @@
           <div class="cards_educational">
             <!-- gráfico -->
             <article class="card_educational">
-              <a href="#">
+              <a href="https://esdmadrid.es/plan-de-estudios-diseno-grafico">
                 <img src="./assets/images/espgrafico.png" alt="Foto proyecto" />
                 <div class="text_card">
-                  <span>240 cts. - 4 años</span>
+                  <span>240 ects. - 4 años</span>
                   <hr />
                   <h4>Especialidad gráfico</h4>
                 </div>
@@ -210,10 +214,10 @@
 
             <!-- Moda -->
             <article class="card_educational">
-              <a href="#">
+              <a href="https://esdmadrid.es/plan-de-estudios-diseno-de-moda">
                 <img src="./assets/images/espmoda.png" alt="Foto proyecto" />
                 <div class="text_card">
-                  <span>240 cts. - 4 años</span>
+                  <span>240 ects. - 4 años</span>
                   <hr />
                   <h4>Especialidad moda</h4>
                 </div>
@@ -230,13 +234,15 @@
 
             <!-- interiores -->
             <article class="card_educational">
-              <a href="#">
+              <a
+                href="https://esdmadrid.es/plan-de-estudios-diseno-de-interiores"
+              >
                 <img
                   src="./assets/images/espinteriores.png"
                   alt="Foto proyecto"
                 />
                 <div class="text_card">
-                  <span>240 cts. - 4 años</span>
+                  <span>240 ects. - 4 años</span>
                   <hr />
                   <h4>Especialidad interiores</h4>
                 </div>
@@ -253,13 +259,15 @@
 
             <!-- producto -->
             <article class="card_educational">
-              <a href="#">
+              <a
+                href="https://esdmadrid.es/plan-de-estudios-diseno-de-producto"
+              >
                 <img
                   src="./assets/images/espproducto.png"
                   alt="Foto proyecto"
                 />
                 <div class="text_card">
-                  <span>240 cts. - 4 años</span>
+                  <span>240 ects. - 4 años</span>
                   <hr />
                   <h4>Especialidad producto</h4>
                 </div>
@@ -278,17 +286,17 @@
 
         <!-- masters -->
         <section>
-          <h3>Máster</h3>
+          <h3>Másters</h3>
           <div class="cards_educational">
             <!-- Máster en diseño interactivo -->
             <article class="card_educational">
-              <a href="#">
+              <a href="https://mdi.esdmadrid.es/">
                 <img
                   src="./assets/images/masterinteractivo.png"
                   alt="Foto proyecto"
                 />
                 <div class="text_card">
-                  <span>60 cts. - 1 año</span>
+                  <span>60 ects. - 1 año</span>
                   <hr />
                   <h4>Máster en diseño interactivo</h4>
                 </div>
@@ -305,13 +313,13 @@
 
             <!-- Máster en espacios comerciales -->
             <article class="card_educational">
-              <a href="#">
+              <a href="http://mdec.esdmadrid.es/">
                 <img
                   src="./assets/images/masterespacios.png"
                   alt="Foto proyecto"
                 />
                 <div class="text_card">
-                  <span>60 cts. - 1 año</span>
+                  <span>60 ects. - 1 año</span>
                   <hr />
                   <h4>Máster en diseño de espacios comerciales</h4>
                 </div>
@@ -334,11 +342,9 @@
     <!-- entrevistas -->
     <section class="entrevistas bg-black flex flex-col" id="entrevistas">
       <div class="interviu_text">
-        <h4
-          class="text-yellow-300 text-center text-3xl font-semibold mt-12 md:mt-24 md:mb-32"
-        >
+        <h2 class="text-primary text-center mt-12 md:mt-24 md:mb-32">
           Entrevistas
-        </h4>
+        </h2>
         <p class="text-white text-center mx-12 md:hidden mb-16 mt-8">
           Alumnos actuales y graduados nos cuentan cómo la ESDM les ha
           influenciado, aprendemos de sus logros y metas y cómo su educación
@@ -347,7 +353,7 @@
       </div>
       <div class="desktop_swiper swiper w-screen hidden md:block h-96">
         <div class="desktop_swiper_wrapper swiper-wrapper">
-          <div class="desktop_swiper_box swiper-slide bg-slate-500">
+          <div class="desktop_swiper_box swiper-slide">
             <iframe
               width="560"
               height="315"
@@ -367,7 +373,7 @@
       </div>
 
       <div class="interview_counter mx-auto gap-4 mt-10 mb-20 hidden md:flex">
-        <svg width="10" height="10">
+        <!-- <svg width="10" height="10">
           <circle cx="5" cy="5" r="5" fill="#404040" />
         </svg>
         <svg width="10" height="10">
@@ -381,7 +387,7 @@
         </svg>
         <svg width="10" height="10">
           <circle cx="5" cy="5" r="5" fill="#D9D9D9" />
-        </svg>
+        </svg> -->
       </div>
     </section>
     <!-- /entrevistas -->
@@ -390,32 +396,15 @@
       <!-- faq -->
       <div class="faq" id="faqs">
         <div class="faq_header">
-          <h4 class="faq_header_title">FAQs</h4>
           <h2 class="faq_header_title">Preguntas Frecuentes</h2>
-          <form class="form">
-            <label for="search"></label>
-            <div class="input_container">
-              <input
-                class="searchbar"
-                type="search"
-                id="search"
-                name="busqueda"
-                placeholder="Buscar"
-              />
-            </div>
-            <img
-              src="./assets/images/icons/search.svg"
-              alt="Search icon"
-              class="icon_search"
-            />
-          </form>
+          <h3 class="faq_header_title">FAQs</h3>
         </div>
 
         <!-- accordion -->
         <section class="faq_accordion">
           <article class="accordion_item closed">
             <div class="accordion_header">
-              <h5 class="accordion_title">¿Qué es la esdm?</h5>
+              <h4 class="accordion_title">¿Qué es la esdm?</h4>
               <span class="accordion_icon">
                 <img
                   src="./assets/images/icons/arrow-faq.svg"
@@ -437,7 +426,7 @@
 
           <article class="accordion_item closed">
             <div class="accordion_header">
-              <h5 class="accordion_title">¿Qué es el diseño?</h5>
+              <h4 class="accordion_title">¿Qué es el diseño?</h4>
               <span class="accordion_icon">
                 <img
                   src="./assets/images/icons/arrow-faq.svg"
@@ -458,7 +447,7 @@
 
           <article class="accordion_item closed">
             <div class="accordion_header">
-              <h5 class="accordion_title">¿Por qué es diferente la esdm?</h5>
+              <h4 class="accordion_title">¿Por qué es diferente la esdm?</h4>
               <span class="accordion_icon">
                 <img
                   src="./assets/images/icons/arrow-faq.svg"
@@ -479,7 +468,7 @@
 
           <article class="accordion_item closed">
             <div class="accordion_header">
-              <h5 class="accordion_title">¿Quiénes formamos la esdm?</h5>
+              <h4 class="accordion_title">¿Quiénes formamos la esdm?</h4>
               <span class="accordion_icon">
                 <img
                   src="./assets/images/icons/arrow-faq.svg"
@@ -506,7 +495,190 @@
     </div>
 
     <!-- footer //  -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+
+      <div class="block">
+        <div class="capital">
+          Escuela Superior de Diseño de Madrid
+        </div>
+        <div class="text_info_footer">
+          Camino de Vinateros 106<br/>
+          28030 Madrid<br/>
+          Teléfono: 91 439 00 00<br/>
+          Fax: 91 437 96 39<br/>
+        </div>
+      </div>
+
+      <div class="block"></div>
+
+      <div class="block siguenos_small">
+        <div class="capital">Síguenos</div>
+        <a
+          target="_blank"
+          href="https://www.facebook.com/EscuelaSuperiorDeDisenoDeMadrid?hc_location=stream"
+          class="block-link"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 256 256"
+            width="16"
+            height="16"
+            fill="currentColor"
+          >
+            <g>
+              <circle
+                cx="128"
+                cy="128"
+                r="96"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></circle>
+              <path
+                d="M168,88.00094H152a24,24,0,0,0-24,24v112"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></path>
+              <line
+                x1="96"
+                y1="144.00094"
+                x2="160"
+                y2="144.00094"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></line>
+            </g>
+          </svg>
+          <span>facebook</span></a
+        >
+        <a
+          href="https://www.instagram.com/esdmadrid/"
+          class="block-link"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 256 256"
+            width="16"
+            height="16"
+            fill="currentColor"
+          >
+            <g>
+              <circle
+                cx="128"
+                cy="128"
+                r="40"
+                fill="none"
+                stroke="currentColor"
+                stroke-miterlimit="10"
+                stroke-width="16"
+              ></circle>
+              <rect
+                x="36"
+                y="36"
+                width="184"
+                height="184"
+                rx="48"
+                stroke-width="16"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              ></rect>
+              <circle cx="180" cy="75.99998" r="12"></circle>
+            </g>
+          </svg>
+          <span>instagram</span></a
+        >
+        <a
+          href="https://twitter.com/ESDMadrid_"
+          class="block-link"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 256 256"
+            width="16"
+            height="16"
+            fill="currentColor"
+          >
+            <g>
+              <path
+                d="M240.00526,60.66136A127.734,127.734,0,0,1,207.91934,92.591l-.0001-.00015A128.04082,128.04082,0,0,1,17.97784,199.99759l.0065-.01172a127.3714,127.3714,0,0,0,70.01685-22.14062l-.00076.00111A128.2051,128.2051,0,0,1,36.64049,37.72648l-.00039.00025A127.98517,127.98517,0,0,0,128.82832,95.1112l-.0028.00058a40.009,40.009,0,0,1,74.03809-27.81035l.00013.00442a128.63506,128.63506,0,0,0,37.14152-6.64449"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></path>
+            </g>
+          </svg>
+          <span data-v-dc5bd60e="">twitter</span></a
+        >
+        <a
+          target="_blank"
+          href="https://www.youtube.com/channel/UCMZ8Tje0_MC_xWcf8iwS1aQ"
+          class="block-link"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 256 256"
+            width="16"
+            height="16"
+            fill="currentColor"
+          >
+            <g>
+              <path
+                d="M204,205.93091a698.14835,698.14835,0,0,1-152,0C43.228,204.92627,34.62451,196.7876,33.22754,188a394.631,394.631,0,0,1,0-120C34.625,59.2124,43.22754,51.07422,52,50.06909a698.14835,698.14835,0,0,1,152,0C212.76953,51.07446,221.377,59.21167,222.77246,68a394.631,394.631,0,0,1,0,120C221.37646,196.78735,212.77393,204.927,204,205.93091Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></path>
+              <polygon
+                points="160 128 112 96 112 160 160 128"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></polygon>
+            </g>
+          </svg>
+          <span data-v-dc5bd60e="">youtube</span></a
+        >
+      </div>
+
+      <div class="block">
+        <div class="capital">Legal y créditos</div>
+        <a
+          href="/policies/privacy_policy"
+          class="block-link"
+        >
+          Política de privacidad
+        </a>
+        <a
+          href="/policies/cookies_policy"
+          class="block-link"
+        >
+          Política de cookies
+        </a>
+        <a href="/policies/legal_notice" class="block-link">
+          Aviso legal
+        </a>
+        <a href="/creditos" class="block-link"> Créditos </a>
+      </div>
+
+      <div class="block">
+        <a href="https://www.comunidad.madrid/" class="logoCam">
+          <img data-v-dc5bd60e="" src="./assets/images/logo-cam-footer.svg" alt="Logo Comunidad de Madrid">
+        </a>
+      </div>
+
+    </footer>
     <!-- /footer -->
 
     <!-- Script -->

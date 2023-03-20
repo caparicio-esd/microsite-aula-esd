@@ -1,16 +1,22 @@
-.banner
-    @apply pb-20 pt-[72px] relative
+.banner_holder
+    @apply pb-8 pt-[72px] 
     @media screen and (max-width: $breakpoint)
-        @apply static pb-[3rem]
-    div
+        @apply static pb-[1rem]
+
+    .banner
         .banner_pic
+            @apply z-0 
+            // relative
             img
-                @apply w-full h-auto object-cover
+                @apply w-full h-auto object-cover 
 
         .banner_info
-            @apply bg-white flex flex-col justify-center items-center
-            @apply absolute top-[60%] inset-x-0
-            @apply px-8 py-10 w-11/12 max-w-1080 mx-auto gap-6
+            //prueba (sale mal), no sabemos superponer el cuadro de texto a la imagen
+            // @apply absolute left-0 right-0 top-[250px] bottom-0 max-h-[300px]
+            // @apply -mt-10 bg-gray-50 z-50 
+            @apply mx-auto  max-w-[900px] px-8 py-10 w-11/12 
+            @apply flex flex-col justify-center items-center gap-6
+            // @apply top-[150px] inset-x-0
             @media screen and (max-width: $breakpoint)
                 @apply static w-[auto]
                 
