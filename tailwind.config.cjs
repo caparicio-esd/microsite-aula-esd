@@ -17,7 +17,7 @@ module.exports = {
         btn: '0 2px 2px rgba(0, 0, 0, 0.33)',
       },
       colors: {
-        primary: '#ffed00', // amarillo
+        primary: '#edc828', // amarillo
         black: '#202124',     
         dark_gray: '#404040', // hover
         mid_gray: '#A3A3A3', 

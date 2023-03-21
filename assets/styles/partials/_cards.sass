@@ -1,13 +1,12 @@
 .cards
-    @apply divide-y
+    @apply divide-y divide-slate-600
     // Flex direction for mobile
     @media (max-width: $breakpoint)
         @apply flex-col
 
 // Card styles
 .card
-    @apply flex justify-center gap-[12.5%] pb-10 pt-10
-    // @apply bg-white
+    @apply flex justify-center gap-[12.5%] pb-6 pt-6
     
     .card_image
         @apply w-full flex justify-center max-w-[33rem]
