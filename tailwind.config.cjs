@@ -1,31 +1,36 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html", "./assets/**/*.sass", "./assets/**/*.scss",  "./app/**/*.js"],
+  content: [
+    "./*.html",
+    "./assets/**/*.sass",
+    "./assets/**/*.scss",
+    "./app/**/*.js",
+  ],
   theme: {
     fontFamily: {
-      sans: ["sans-serif"]
+      sans: ["sans-serif"],
     },
-  extend: {
+    extend: {
       maxWidth: {
-        1080: '1080px',
+        1080: "1080px",
       },
       margin: {
-        small: '1.5rem',
-        big: '2.5rem',
+        small: "1.5rem",
+        big: "2.5rem",
       },
       dropShadow: {
-        btn: '0 2px 2px rgba(0, 0, 0, 0.33)',
+        btn: "0 2px 2px rgba(0, 0, 0, 0.33)",
       },
       colors: {
-        primary: '#edc828', // amarillo
-        black: '#202124',     
-        dark_gray: '#404040', // hover
-        mid_gray: '#A3A3A3', 
-        light_gray: '#E5E5E5',
-        white: '#FFFFFF',
+        primary: "#edc828", // amarillo
+        black: "#202124",
+        dark_gray: "#404040", // hover
+        mid_gray: "#A3A3A3",
+        light_gray: "#E5E5E5",
+        white: "#FFFFFF",
       },
       fontSize: {
-        base: "1rem"
+        base: "1rem",
       },
       fontFamily: {
         source: "'Source Sans Pro'",

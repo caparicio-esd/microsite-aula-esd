@@ -1,60 +1,58 @@
 @font-face {
-    font-family: 'NettoOT';
-    src: url('NettoOT-Bold.woff2') format('woff2'),
-        url('NettoOT-Bold.woff') format('woff'),
-        url('NettoOT-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "NettoOT";
+  src: url("NettoOT-Bold.woff2") format("woff2"),
+    url("NettoOT-Bold.woff") format("woff"),
+    url("NettoOT-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'NettoOT';
-    src: url('NettoOT.woff2') format('woff2'),
-        url('NettoOT.woff') format('woff'),
-        url('NettoOT.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "NettoOT";
+  src: url("NettoOT.woff2") format("woff2"), url("NettoOT.woff") format("woff"),
+    url("NettoOT.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'NettoOT';
-    src: url('NettoOT-Light.woff2') format('woff2'),
-        url('NettoOT-Light.woff') format('woff'),
-        url('NettoOT-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "NettoOT";
+  src: url("NettoOT-Light.woff2") format("woff2"),
+    url("NettoOT-Light.woff") format("woff"),
+    url("NettoOT-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'NettoOT';
-    src: url('NettoOT_1.woff2') format('woff2'),
-        url('NettoOT_1.woff') format('woff'),
-        url('NettoOT_1.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "NettoOT";
+  src: url("NettoOT_1.woff2") format("woff2"),
+    url("NettoOT_1.woff") format("woff"),
+    url("NettoOT_1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'NettoOT';
-    src: url('NettoOT-Bold_1.woff2') format('woff2'),
-        url('NettoOT-Bold_1.woff') format('woff'),
-        url('NettoOT-Bold_1.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "NettoOT";
+  src: url("NettoOT-Bold_1.woff2") format("woff2"),
+    url("NettoOT-Bold_1.woff") format("woff"),
+    url("NettoOT-Bold_1.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'NettoOT';
-    src: url('NettoOT-Light_1.woff2') format('woff2'),
-        url('NettoOT-Light_1.woff') format('woff'),
-        url('NettoOT-Light_1.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "NettoOT";
+  src: url("NettoOT-Light_1.woff2") format("woff2"),
+    url("NettoOT-Light_1.woff") format("woff"),
+    url("NettoOT-Light_1.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
-

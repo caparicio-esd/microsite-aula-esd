@@ -33,8 +33,8 @@ const renderDesktopGallery = () => {
 
   iframes.forEach((iframe, i) => {
     const desktopFrame = document.createElement("div");
-    desktopFrame.style.flexBasis  = Math.min(innerWidth * 0.7, 600) + "px"
-    desktopFrame.style.flexShrink  = "0"
+    desktopFrame.style.flexBasis = Math.min(innerWidth * 0.7, 600) + "px";
+    desktopFrame.style.flexShrink = "0";
 
     desktopFrame.className =
       "desktop_swiper_box swiper-slide bg-slate-1000 shrink-0 block snap-center snap-always";
