@@ -1,7 +1,6 @@
 .header
     @apply w-full flex justify-between items-center px-[32px] shadow-md fixed bg-white z-20
-    @media screen and (max-width: $breakpoint)
-        @apply px-[32px] py-[24px] flex justify-between items-center
+    @apply py-[24px] lg:py-0
     .header_logo
         @apply flex flex-row gap-[8px] justify-center items-center
         .logo_item
@@ -14,36 +13,28 @@
                 @apply text-[24px]
 
     .header_menu
+        @apply hidden lg:flex text-sm
         .menu_items
-            @apply flex text-sm
-            @media screen and (max-width: $breakpoint)
-                display: none
-
+            @apply flex
             .menu_item
                 @apply hover:bg-black
                 @apply hover:text-white
                 @apply hover:duration-300
-                @media (max-width: 953px)
-                    @apply px-[20px]
+                @apply px-4 lg:px-0
+
                 a
                     @apply py-6 px-6 block
 
-
-.mobile_menu
-    @apply hidden
-    @media screen and (max-width: $breakpoint)
-        @apply flex flex-col justify-center items-center gap-5  
-    
-    // .icon_menu
-    //     .menu_bars
-    //         svg
-    //     .menu_text
-        //   invisible         
-            // .menu_items
-            //     .menu_item
-
-
-
-
-
-
+    .mobile_menu
+        @apply lg:hidden flex flex-col justify-center items-center gap-5
+        &.opened
+            .menu_text
+                @apply flex
+        .menu_text
+            @apply fixed top-20 left-0 w-full h-screen
+            @apply bg-black bg-opacity-80
+            @apply justify-center items-center hidden
+            .menu_items
+                @apply flex flex-col gap-6
+                .menu_item
+                    @apply text-2xl font-neto text-white

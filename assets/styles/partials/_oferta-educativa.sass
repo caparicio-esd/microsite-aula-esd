@@ -5,9 +5,8 @@
     h3 
         @apply text-center pb-6
     .cards_educational
-        @apply grid grid-cols-2 gap-x-8 gap-y-6 pb-16
-        @media (max-width: $breakpoint)
-            @apply grid-cols-1
+        @apply grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-6 pb-16
+
         .card_educational
             @apply bg-white border-solid rounded-sm 
             // shadow-md 
@@ -22,21 +21,3 @@
                 @apply transition ease-in-out duration-300
                 hr
                     @apply h-1 w-full bg-black
-
-// pop-up
-
-.overlay
-    @apply fixed top-0 left-0 right-0 bottom-0
-    @apply bg-black z-10 hidden bg-opacity-30
-    @apply w-full h-full flex items-center justify-center
-    @media (max-width: $breakpoint)
-        @apply px-[9%]
-
-.popup
-    @apply flex flex-col gap-7 justify-start
-    @apply absolute inset-auto
-    @apply bg-white p-10 rounded-sm
-    // shadow
-    @media (max-width: $breakpoint)
-        @apply w-[82%]
-        

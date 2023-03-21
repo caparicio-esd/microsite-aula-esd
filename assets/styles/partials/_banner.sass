@@ -1,13 +1,11 @@
 .banner_holder
-    @apply pb-8 pt-[68px]
-    @media screen and (max-width: $breakpoint)
-        @apply static pb-[1rem]
-
+    @apply pb-[1rem] lg:pb-8 pt-[68px]
     .banner
         .banner_pic
-            @apply z-0
+            @apply z-0 
+            @apply h-[350px] lg:h-auto
             img
-                @apply w-full h-auto object-cover
+                @apply w-full h-full object-cover
 
         .banner_info
             @apply mx-auto  max-w-[900px] px-8 py-10 w-11/12

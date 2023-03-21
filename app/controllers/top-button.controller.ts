@@ -1,16 +1,18 @@
 const upButton = document.querySelector<HTMLElement>("#up");
 
-const breakPoint = 770;
+const breakPoint = 768;
 
 export const topButtonControllerInit = () => {
   const responsiveWindow = window.matchMedia(`(max-width: ${breakPoint}px)`);
-  responsiveWindow.addEventListener("change", (ev) => {
-    if (responsiveWindow.matches) {
-      setButtonToLarge();
-    } else {
-      setButtonToSmall();
-    }
-  });
+  matchingFunction(responsiveWindow)
+  responsiveWindow.addEventListener("change", (ev) => matchingFunction(responsiveWindow));
+};
+const matchingFunction = (responsiveWindow) => {
+  if (responsiveWindow.matches) {
+    setButtonToLarge();
+  } else {
+    setButtonToSmall();
+  }
 };
 const setButtonToLarge = () => {
   upButton?.classList.add("hidden_text");

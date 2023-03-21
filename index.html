@@ -47,11 +47,15 @@
 
         <div class="menu_text">
           <ul class="menu_items">
-            <li class="menu_item links" id="#ofertaeducativa">
-              oferta educativa
+            <li class="menu_item links">
+              <a href="#ofertaeducativa">oferta educativa</a>
             </li>
-            <li class="menu_item links" id="#entrevistas">entrevistas</li>
-            <li class="menu_item links" id="#faqs">faqs</li>
+            <li class="menu_item links">
+              <a href="#entrevistas">entrevistas</a>
+            </li>
+            <li class="menu_item links">
+              <a href="#faqs">faqs</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -208,14 +212,6 @@
               </a>
             </article>
 
-            <!-- <div class="overlay">
-                <div class="popup">
-                  <h4>Grado en diseño especialidad gráfico</h4>
-                  <p>El diseñador gráfico es un creador cuya actividad tiene por objeto la utilización del lenguaje gráfico para generar mensajes y comunicar contenidos de naturaleza diversa con diferentes medios y para los distintos canales de comunicación.</p>
-                  <button class="btn btn_primary" onclick="window.open('https://esdmadrid.es/plan-de-estudios-diseno-grafico')">Ver más</button>
-                </div>
-              </div> -->
-
             <!-- Moda -->
             <article class="card_educational">
               <a href="https://esdmadrid.es/plan-de-estudios-diseno-de-moda">
@@ -227,14 +223,6 @@
                 </div>
               </a>
             </article>
-
-            <!-- <div class="overlay">
-                <div class="popup">
-                  <h4>Grado en diseño especialidad moda</h4>
-                  <p>El diseñador de moda es un profesional capaz de configurar material y formalmente los productos de diseño textil y de la indumentaria en distintos ámbitos, atendiendo las necesidades y las tendencias del mercado, de creatividad, de innovación y su viabilidad técnico-productiva, económica, medio-ambiental y sociocultural.</p>
-                  <button class="btn btn_primary" onclick="window.open('https://esdmadrid.es/plan-de-estudios-diseno-de-moda')">Ver más</button>
-                </div>
-              </div> -->
 
             <!-- interiores -->
             <article class="card_educational">
@@ -253,14 +241,6 @@
               </a>
             </article>
 
-            <!-- <div class="overlay">
-                <div class="popup">
-                  <h4>Grado en diseño especialidad interiore</h4>
-                  <p>El diseñador de interiores es un profesional capaz de analizar, investigar y proyectar, dirigir equipos de proyectos y de ejecución de obras de diseño de interiores, así como actuar como interlocutor directo en las administraciones públicas en el ámbito de su profesión.</p>
-                  <button class="btn btn_primary" onclick="window.open('https://esdmadrid.es/plan-de-estudios-diseno-de-interiores')">Ver más</button>
-                </div>
-              </div> -->
-
             <!-- producto -->
             <article class="card_educational">
               <a
@@ -277,14 +257,6 @@
                 </div>
               </a>
             </article>
-
-            <!-- <div class="overlay">
-                <div class="popup">
-                  <h4>Grado en diseño especialidad producto</h4>
-                  <p>El diseñador de producto es un profesional capaz de proyectar, analizar, investigar y determinar las propiedades y cualidades físicas, así como los valores simbólicos y comunicativos que han de caracterizar sus producciones, definiendo la forma, la configuración, la calidad, el funcionamiento, el valor y la significación estética, social y medioambiental de las mismas.</p>
-                  <button class="btn btn_primary" onclick="window.open('https://esdmadrid.es/plan-de-estudios-diseno-de-producto')">Ver más</button>
-                </div>
-              </div> -->
           </div>
         </section>
 
@@ -307,14 +279,6 @@
               </a>
             </article>
 
-            <!-- <div class="overlay">
-                  <div class="popup">
-                    <h4>Máster en diseño interactivo</h4>
-                    <p>El programa del máster provee a los estudiantes de competencias que les permitirán establecer estrategias de promoción e investigación activa en el diseño interactivo, proporcionando al alumno una visión global avanzada, que le permita desempeñar su carrera laboral en las nuevas tecnologías emergentes.</p>
-                    <button class="btn btn_primary" onclick="window.open('https://mdi.esdmadrid.es/')">Ver más</button>
-                  </div>
-                </div> -->
-
             <!-- Máster en espacios comerciales -->
             <article class="card_educational">
               <a href="http://mdec.esdmadrid.es/">
@@ -329,14 +293,6 @@
                 </div>
               </a>
             </article>
-
-            <!-- <div class="overlay">
-                  <div class="popup">
-                    <h4>Máster en diseño de espacios comerciales</h4>
-                    <p>El Máster en Diseño de Espacios Comerciales de la ESD integra arquitectura, diseño y marketing visual, profundizando en el conocimiento del retail en su sentido más amplio, como identificador de los comportamientos de una sociedad y configurador de la vida e imagen de la ciudad.</p>
-                    <button class="btn btn_primary" onclick="window.open('http://mdec.esdmadrid.es/')">Ver más</button>
-                  </div>
-                </div> -->
           </div>
         </section>
       </section>
@@ -346,47 +302,21 @@
     <!-- entrevistas -->
     <section class="entrevistas bg-black flex flex-col pb-12" id="entrevistas">
       <div class="interviu_text">
-        <h2 class="text-primary text-center mt-12 md:mt-16 md:mb-16">
+        <h2 class="text-primary text-center mt-12 lg:mt-16 lg:mb-16">
           Entrevistas
         </h2>
-        <p class="text-white text-center mx-12 md:hidden mb-16 mt-8">
+        <p class="text-white text-center mx-12 lg:hidden mb-16 mt-8">
           Alumnos actuales y graduados nos cuentan cómo la ESDM les ha
           influenciado, aprendemos de sus logros y metas y cómo su educación
           influyó en su éxito y planes futuros.
         </p>
       </div>
       <div
-        class="desktop_swiper swiper w-screen hidden md:block h-96 overflow-hidden"
+        class="desktop_swiper swiper w-screen hidden lg:block h-96 overflow-hidden"
       >
         <div
           class="desktop_swiper_wrapper swiper-wrapper px-24 flex gap-6 overflow-auto snap-x snap-mandatory"
-        >
-          <div
-            class="desktop_swiper_box swiper-slide bg-slate-1000 flex-1 snap-center snap-always"
-          >
-            hola
-          </div>
-          <div
-            class="desktop_swiper_box swiper-slide bg-slate-1000 flex-1 flex snap-center snap-always"
-          >
-            hola
-          </div>
-          <div
-            class="desktop_swiper_box swiper-slide bg-slate-1000 flex-1 flex snap-center snap-always"
-          >
-            hola
-          </div>
-          <div
-            class="desktop_swiper_box swiper-slide bg-slate-1000 flex-1 flex snap-center snap-always"
-          >
-            hola
-          </div>
-          <div
-            class="desktop_swiper_box swiper-slide bg-slate-1000 flex-1 flex snap-center snap-always"
-          >
-            hola
-          </div>
-        </div>
+        ></div>
       </div>
     </section>
     <!-- /entrevistas -->
@@ -401,7 +331,7 @@
 
         <!-- accordion -->
         <section class="faq_accordion">
-          <article class="accordion_item closed">
+          <article class="accordion_item opened">
             <div class="accordion_header">
               <h4 class="accordion_title">¿Qué es la e/s/d?</h4>
               <span class="accordion_icon">
@@ -423,7 +353,7 @@
             </div>
           </article>
 
-          <article class="accordion_item closed">
+          <article class="accordion_item opened">
             <div class="accordion_header">
               <h4 class="accordion_title">¿Qué es el diseño?</h4>
               <span class="accordion_icon">
@@ -444,7 +374,7 @@
             </div>
           </article>
 
-          <article class="accordion_item closed">
+          <article class="accordion_item opened">
             <div class="accordion_header">
               <h4 class="accordion_title">¿Por qué es diferente la e/s/d?</h4>
               <span class="accordion_icon">
@@ -465,7 +395,7 @@
             </div>
           </article>
 
-          <article class="accordion_item closed">
+          <article class="accordion_item opened">
             <div class="accordion_header">
               <h4 class="accordion_title">¿Quiénes formamos la e/s/d?</h4>
               <span class="accordion_icon">

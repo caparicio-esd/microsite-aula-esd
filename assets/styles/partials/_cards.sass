@@ -1,39 +1,25 @@
 .cards
     @apply divide-y divide-slate-600
-    // Flex direction for mobile
-    @media (max-width: $breakpoint)
-        @apply flex-col
+    @apply flex-col lg:flex-row
 
 // Card styles
 .card
     @apply flex justify-center gap-[12.5%] pb-6 pt-6
-    
+    @apply flex-col lg:flex-row
+
     .card_image
-        @apply w-full flex justify-center max-w-[33rem]
-        
+        @apply w-full flex justify-center lg:max-w-[33rem] pb-8 lg:pb-0
+        @apply mx-auto max-w-[400px] lg:max-h-[initial]
+
     .card_text
-        @apply flex flex-col justify-center mx-auto 
+        @apply flex flex-col justify-center mx-auto
         @apply max-w-[33rem] w-full
-        
+
         h4
             @apply pb-6
         p
-            @apply pb-6 
-            
-            
-    // Flex direction for mobile
-    @media (max-width: $breakpoint)
-        @apply flex-col
-        
-        .card_image
-            @apply max-h-[initial] pb-8 
-            @apply mx-auto max-w-[400px]
-            
-        .card_text
-            @apply mx-auto
+            @apply pb-6
 
 // Alternate card styles
 .card_2
-    @apply flex-row-reverse
-    @media (max-width: 770px)
-        @apply flex-col
+    @apply flex-col lg:flex-row-reverse
