@@ -4,8 +4,10 @@ const breakPoint = 768;
 
 export const topButtonControllerInit = () => {
   const responsiveWindow = window.matchMedia(`(max-width: ${breakPoint}px)`);
-  matchingFunction(responsiveWindow)
-  responsiveWindow.addEventListener("change", (ev) => matchingFunction(responsiveWindow));
+  matchingFunction(responsiveWindow);
+  responsiveWindow.addEventListener("change", (ev) =>
+    matchingFunction(responsiveWindow)
+  );
 };
 const matchingFunction = (responsiveWindow) => {
   if (responsiveWindow.matches) {
