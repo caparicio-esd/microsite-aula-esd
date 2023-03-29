@@ -18,5 +18,5 @@ window.addEventListener("DOMContentLoaded", () => {
   faqSearchControllerInit();
   initDesktopSwiperController();
   headerMobileButtonController();
-  cookiesController()
+  cookiesController();
 });
