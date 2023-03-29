@@ -1,4 +1,5 @@
 import "./../assets/styles/style.sass";
+import { cookiesController } from "./controllers/cookies.controller";
 
 import {
   faqControllerInit,
@@ -17,4 +18,5 @@ window.addEventListener("DOMContentLoaded", () => {
   faqSearchControllerInit();
   initDesktopSwiperController();
   headerMobileButtonController();
+  cookiesController()
 });
